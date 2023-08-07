@@ -29,7 +29,7 @@ class DataIngestion:
             df = pd.read_csv('notebook/data/StudentsPerformance.csv')
             logging.info('Read the datasets as DataFrame')
 
-            df.columns = [i.replace(' ', '_')
+            df.columns = [i.replace(' ', '_').replace('/', '_')
                           for i in df.columns]
             logging.info('Replacing white space to "_" in column name')
 

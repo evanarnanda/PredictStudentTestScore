@@ -26,7 +26,7 @@ class DataTransformation:
     def get_data_transformer_obj(self):
         try:
             num_features = ['reading_score', 'writing_score']
-            cat_features = ['gender', 'race/ethnicity', 'parental_level_of_education', 'lunch',
+            cat_features = ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch',
                             'test_preparation_course']
 
             num_pipeline = Pipeline(
